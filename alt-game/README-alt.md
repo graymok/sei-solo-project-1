@@ -26,19 +26,19 @@ Wireframes are visual representations of planned game layouts and user interface
 
 ### Wireframe #1 - Game Start Screen
 The first screen that the player will see upon loading the game. There will be a short set of instructions and some story context to orient the player.
-<img src="https://github.com/graymok/sei-solo-project-1/blob/main/assets/alt-wireframe-1.png?raw=true">
+<img src="https://github.com/graymok/sei-solo-project-1/blob/main/alt-game/alt-wireframe-1.png?raw=true">
 
 ### Wireframe #2 - Sortie Screen - Semi Stretch
 The second screen that the player will see upon loading the game. Planned features include ability to purchase game-wide upgrades. This screen is also the screen that players will see after playing through the game and clicking "restart game" at the end screen.
-<img src="https://github.com/graymok/sei-solo-project-1/blob/main/assets/alt-wireframe-2.png?raw=true">
+<img src="https://github.com/graymok/sei-solo-project-1/blob/main/alt-game/alt-wireframe-2.png?raw=true">
 
 ### Wireframe #3 - Main Game Screen
 The third screen that the player will see upon loading the game. This screen is the main game area where the player ship will be able to move and shoot, while avoiding enemies who approach from the top downwards and will also shoot.
-<img src="https://github.com/graymok/sei-solo-project-1/blob/main/assets/alt-wireframe-3.png?raw=true">
+<img src="https://github.com/graymok/sei-solo-project-1/blob/main/alt-game/alt-wireframe-3.png?raw=true">
 
 ### Wireframe #4 - End Game Screen
 The final screen that the player will see upon loading the game. This screen will declare either a win or a loss, share game stats like score or enemies destroyed, and have a restart button that will take the player back to Wireframe #2.
-<img src="https://github.com/graymok/sei-solo-project-1/blob/main/assets/alt-wireframe-4.png?raw=true">
+<img src="https://github.com/graymok/sei-solo-project-1/blob/main/alt-game/alt-wireframe-4.png?raw=true">
 
 
 ## User Stories
