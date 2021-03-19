@@ -26,7 +26,7 @@ Wireframes are visual representations of planned game layouts and user interface
 
 ### Wireframe #1 - Game Start Screen
 The first screen that the player will see upon loading the game. There will be a short set of instructions and some story context to orient the player.
-<img src="https://github.com/graymok/sei-solo-project-1/blob/main/assets/alt-wireframe-2.png?raw=true">
+<img src="https://github.com/graymok/sei-solo-project-1/blob/main/assets/alt-wireframe-1.png?raw=true">
 
 ### Wireframe #2 - Sortie Screen - Semi Stretch
 The second screen that the player will see upon loading the game. Planned features include ability to purchase game-wide upgrades. This screen is also the screen that players will see after playing through the game and clicking "restart game" at the end screen.
