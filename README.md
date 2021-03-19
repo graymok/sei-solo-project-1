@@ -3,7 +3,6 @@
 ## Overview
 A web and text-based adventure game placing the protagonist (the player) in an ongoing struggle against an unknown calamity. The player must use their wits to navigate conversations with NPCs, uncover patterns, and collect the necessary items to survive or even triumph over the calamity.
 
-</br> 
 
 ### Planned features include:
 * _Character creation_
@@ -13,14 +12,12 @@ A web and text-based adventure game placing the protagonist (the player) in an o
 * _Mini-games as narrative milestones_
 * _Dynamic artwork via JS Canvas_
 
-</br> 
 
 ### Why make this game?
 * Text-based input RPG games allow for storytelling, player choice, and NPC behaviors without needing to create expensive visual assets
 * With the text system as the main narrative vehicle, there is an opportunity for game "inception" by layering in mini-games with unique rules or controls to test the player's wit or dexterity
 * Finally, it feels like a cool idea with enough scalable complexity to turn up or turn down the number of inter-connecting sub-game modules.
 
-</br>
 
 ## Game Rules
 1. Player will interact with the main game through text commands or inputs that will need to be context-sensitive to NPC descriptions or questions.
@@ -28,7 +25,6 @@ A web and text-based adventure game placing the protagonist (the player) in an o
 3. Commands consisting of word strings (e.g. look around) or direct questions (e.g. what do I see?) may trigger game responses.
 4. Player will have opportunities to solve puzzles, answer riddles, or request items that may provide in-game boons that bestow positive benefits and incremental progress towards the win condition.
 
-</br>
 
 ## Wireframes
 Wireframes are visual representations of planned game layouts and user interfaces to help identify the overall storyboard for the game.
@@ -37,25 +33,21 @@ Wireframes are visual representations of planned game layouts and user interface
 The first screen that the player will see upon loading the game. There will be a short set of instructions and some story context to orient the player.
 <img src="https://github.com/graymok/sei-solo-project-1/blob/main/assets/wireframe-1.png?raw=true)">
 
-</br>
 
 ### Wireframe #2 - Primary Game Screen
 The main screen that the player will see when playing the game. This screen represents where the majority of the text-based adventuring and choices will play out.
 <img src="https://github.com/graymok/sei-solo-project-1/blob/main/assets/wireframe-2.png?raw=true">
 
-</br>
 
 ### Wireframe #3 - Minigame Screen
 This is a secondary game screen that transitions from/to Wireframe #2 depending on whether a mini game is initialized due to player choices.
 <img src="https://github.com/graymok/sei-solo-project-1/blob/main/assets/wireframe-3.png?raw=true">
 
-</br>
 
 ### Wireframe #4 - Game Ending Screen
 This is the final screen that the player will see upon successful or unsuccessful completion of the game's ending conditions. There will be a button to redirect players back to the start of the game to conduct another playthrough.
 <img src="https://github.com/graymok/sei-solo-project-1/blob/main/assets/wireframe-4.png?raw=true">
 
-</br>
 
 ## User Stories
 User stories help translate the game mechanics and game experience so non-programmers and programmers alike understand what happens in the game:
@@ -78,7 +70,6 @@ User stories help translate the game mechanics and game experience so non-progra
 
 9. When the User wins or loses, the game window will transition to the game ending screen with a button to restart the game.
 
-</br>
 
 ## MVP Checklist
 The MVP is designed to help the programmer test, implement, and experience the core mechanics of the game with minimal assets and time investment:
@@ -92,7 +83,6 @@ The MVP is designed to help the programmer test, implement, and experience the c
     - [ ] Validate player's answer to give player a new item/ability
     - [ ] Validate player's answers to check for win condition
 
-</br>
 
 ## Stretch Goals
 Stretch goals encompass all of the features, mechanics, and visual ugprades that are not necessary for the core game play but may significantly enhance the overall aesthetic, experience, and quality of the finished game.
