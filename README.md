@@ -1,5 +1,8 @@
 # The Trial of the Sphinx
 
+## Project Tracker
+<a href="https://trello.com/b/ssE8LVCj/sei-solo-project-1">Trello Board</a> 
+
 ## Overview
 A web and text-based adventure game placing the protagonist (the player) in an ongoing struggle against an unknown calamity. The player must use their wits to navigate conversations with NPCs, uncover patterns, and collect the necessary items to survive or even triumph over the calamity.
 
