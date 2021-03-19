@@ -35,22 +35,22 @@ Wireframes are visual representations of planned game layouts and user interface
 
 ### Wireframe #1 - Game Start Screen
 ![Image of Wireframe #1]
-(assets/wireframe-1.png)
+(https://github.com/graymok/sei-solo-project-1/blob/main/assets/wireframe-1.png)
 The first screen that the player will see upon loading the game. There will be a short set of instructions and some story context to orient the player.
 
 ### Wireframe #2 - Primary Game Screen
 ![Image of Wireframe #2]
-(assets/wireframe-2.png)
+(https://github.com/graymok/sei-solo-project-1/blob/main/assets/wireframe-2.png)
 The main screen that the player will see when playing the game. This screen represents where the majority of the text-based adventuring and choices will play out.
 
 ### Wireframe #3 - Minigame Screen
 ![Image of Wireframe #3]
-(assets/wireframe-3.png)
+(https://github.com/graymok/sei-solo-project-1/blob/main/assets/wireframe-3.png)
 This is a secondary game screen that transitions from/to Wireframe #2 depending on whether a mini game is initialized due to player choices.
 
 ### Wireframe #4 - Game Ending Screen
 ![Image of Wireframe #4]
-(assets/wireframe-4.png)
+(https://github.com/graymok/sei-solo-project-1/blob/main/assets/wireframe-4.png)
 This is the final screen that the player will see upon successful or unsuccessful completion of the game's ending conditions. There will be a button to redirect players back to the start of the game to conduct another playthrough.
 
 
