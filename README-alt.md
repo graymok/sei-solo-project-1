@@ -36,7 +36,7 @@ The second screen that the player will see upon loading the game. Planned featur
 The third screen that the player will see upon loading the game. This screen is the main game area where the player ship will be able to move and shoot, while avoiding enemies who approach from the top downwards and will also shoot.
 <img src="https://github.com/graymok/sei-solo-project-1/blob/main/assets/alt-wireframe-3.png?raw=true">
 
-### Wireframe #3 - Main Game Screen
+### Wireframe #4 - End Game Screen
 The final screen that the player will see upon loading the game. This screen will declare either a win or a loss, share game stats like score or enemies destroyed, and have a restart button that will take the player back to Wireframe #2.
 <img src="https://github.com/graymok/sei-solo-project-1/blob/main/assets/alt-wireframe-4.png?raw=true">
 
