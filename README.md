@@ -51,13 +51,13 @@ User stories help translate the game mechanics and game experience so non-progra
 ## MVP Checklist
 The MVP is designed to help the programmer test, implement, and experience the core mechanics of the game with minimal assets and time investment:
 
-1. [ ] Create linked HTML, CSS, and JS files
-2. [ ] Create battlefield area with JS canvase
-3. [ ] Create enemy shape class
-4. [ ] Create enemy shape spawner
-5. [ ] Create mouse click detection
-6. [ ] Test mouse click and enemy despawner mechanic
-7. [ ] Test score increased based on mouse clicks
+1. [x] Create linked HTML, CSS, and JS files
+2. [x] Create battlefield area with JS canvase
+3. [x] Create enemy shape class
+4. [x] Create enemy shape spawner
+5. [x] Create mouse click detection
+6. [x] Test mouse click and enemy despawner mechanic
+7. [x] Test score increased based on mouse clicks
 
 
 ## Stretch Goals
