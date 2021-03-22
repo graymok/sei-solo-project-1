@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+}
+
+canvas {
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+}
+
+.window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 400px;
+    height: 80px;
+
+}
+
+
+

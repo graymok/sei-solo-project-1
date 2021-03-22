@@ -4,33 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/app.js"></script>
-    <title>The Trial of the Sphinx</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <title>Shape Attack!</title>
 </head>
 <body>
-
-    <main class="mainContainer">
- 
-        <div class="gameOutput">
-            <div id="messagesNPC">
-                
-            </div>
-
-        </div>
-        <div class="playerInput">
-            <input id="inputField" type="text">
-            <button id="btn-start">Debug: PC Submit</button>
-            <button id="btn-reset">Debug: Reset</button>
-            <button id="btn-npc">Debug: NPC Text</button>
-
-        </div>
-        <div class="playerLog">
-
-
-        </div>     
-
-    </main>
-
+    <div class="container">
+       <canvas></canvas>
+       
+    </div>
+    
+    <div class="window">
+        <button id="testbtn">Start Game Test</button>
+        <button id="endbtn">End Game Test</button> 
+        <div class="score">Score: <span id="scoreVal">0</span></div>
+    </div>
 </body>
 </html>
