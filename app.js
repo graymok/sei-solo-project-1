@@ -53,9 +53,9 @@ canvas.addEventListener('click', (e) => {
       x: e.clientX,
       y: e.clientY
     }
-    //console.log(pos)
-    //console.log("x", pos.x)
-    //console.log("y", pos.y)
+    //console.log(position)
+    //console.log("mouse click - x", position.x)
+    //console.log("mouse click - y", position.y)
 
     shadows.forEach(e => {
         const xCheck = position.x > e.x && position.x < e.x + e.width
@@ -99,9 +99,9 @@ document.getElementById('startbtn').addEventListener('click', () => {
     animate()
 })
 
-/* document.getElementById('pausebtn').addEventListener('click', () => {
+document.getElementById('pausebtn').addEventListener('click', () => {
     animCounter = false
-}) */
+})
 
 /* document.getElementById('endbtn').addEventListener('click', () => {
     
@@ -129,8 +129,9 @@ const animate = () => {
             splashEnd.classList.add('hidden')
         }
     } else {
-        splashEnd.classList.remove('hidden')  
-        stopAndClear()  
+        splashEnd.classList.remove('hidden')          
+        stopAndClear()
+
         
     }
 

@@ -6,6 +6,12 @@ body {
 
 }
 
+p {
+    margin: 0;
+}
+
+
+
 .container {
     display: flex;
     flex-direction: column;
@@ -14,14 +20,16 @@ body {
 }
 
 canvas {
-    border: 1px solid black;
+    border: 1px rgba(0, 0, 0, 0.5);
     height: 500px;
     width: 500px;
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.5);
+
 }
 
 
 .information {
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     display: flex;
     flex-direction: row;
     width: 490px;
@@ -30,14 +38,14 @@ canvas {
 }
 
 .buttons {
-    /* border: 1px solid green; */
+    border: 1px solid green;
     width: 240px;
     margin: 5px 5px;
-    padding: 5px 5px;
+    padding: 10px 10px;
 }
 
 .displays {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     width: 240px;
     margin: 5px 5px;
     padding: 10px 10px;
@@ -51,4 +59,7 @@ canvas {
     display: none;
 }
 
+button {
+    margin: 10px 0;
+}
 
