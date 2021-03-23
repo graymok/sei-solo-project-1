@@ -11,20 +11,27 @@
 <body>
 
     <div class="container">
+        <div class="imageSplash" id="welcomeSplash">
+            <img src="assets/welcome.png" >
+        </div>
+        <div class="imageSplash hidden" id="endingSplash">
+            <img src="assets/ending.png">
+        </div>
         <canvas></canvas>
+        
     </div>
     
     <div class="information">
         <div class="buttons">
-            <p>Welcome to Shape Attack! In 30 seconds, zap as many shapes away with your left mouse click, get points, break records!</p>
-            <button id="startbtn">Start Game Test</button>
-            <button id="pausebtn">Pause Game Test</button> 
-            <button id="endbtn">End Game Test</button>
+            <p>Welcome to Shape Attack! In 10 seconds, zap as many shapes away with your left mouse click, get points, break records!</p>
+            <button id="startbtn">Start Game</button>
+            <!-- <button id="pausebtn">Pause Game Test</button> 
+            <button id="endbtn">End Game Test</button> -->
         </div> 
         <div class="displays">
-            <div class="score">Score: <span id="scoreVal">0</span></div>
-            <div class="timer">Time left: <span id="timeVal">0</span></div>
-            <div class="top">Top Score: <span id="topVal">0</span></div>
+            <div class="score">Current Score: <span id="scoreVal">0</span></div>
+            <div class="timer">Current Time left: <span id="timeVal">0</span></div>
+            <div class="top">Current Top Score: <span id="topVal">0</span></div>
         </div>
     </div>
     
