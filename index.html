@@ -9,15 +9,24 @@
     <title>Shape Attack!</title>
 </head>
 <body>
+
     <div class="container">
-       <canvas></canvas>
-       
+        <canvas></canvas>
     </div>
     
-    <div class="window">
-        <button id="testbtn">Start Game Test</button>
-        <button id="endbtn">End Game Test</button> 
-        <div class="score">Score: <span id="scoreVal">0</span></div>
+    <div class="information">
+        <div class="buttons">
+            <p>Welcome to Shape Attack! In 30 seconds, zap as many shapes away with your left mouse click, get points, break records!</p>
+            <button id="startbtn">Start Game Test</button>
+            <button id="pausebtn">Pause Game Test</button> 
+            <button id="endbtn">End Game Test</button>
+        </div> 
+        <div class="displays">
+            <div class="score">Score: <span id="scoreVal">0</span></div>
+            <div class="timer">Time left: <span id="timeVal">0</span></div>
+            <div class="top">Top Score: <span id="topVal">0</span></div>
+        </div>
     </div>
+    
 </body>
 </html>

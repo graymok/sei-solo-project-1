@@ -1,28 +1,46 @@
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+
+
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    height: 450px;
+
+
 }
 
 canvas {
-    height: 400px;
-    width: 400px;
     border: 1px solid black;
+    height: 500px;
+    width: 500px;
 }
 
-.window {
+
+.information {
+    border: 1px solid blue;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 400px;
-    height: 80px;
-
+    flex-direction: row;
+    width: 490px;
+    height: 200px;
+    padding: 5px 5px;
 }
 
+.buttons {
+    border: 1px solid green;
+    width: 240px;
+    margin: 5px 5px;
+    padding: 5px 5px;
+}
+
+.displays {
+    border: 1px solid red;
+    width: 240px;
+    margin: 5px 5px;
+    padding: 10px 10px;
+}
 
 

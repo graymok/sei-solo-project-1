@@ -9,14 +9,17 @@ canvas.setAttribute('height', canvasHeight)
 canvas.setAttribute('width', canvasWidth)
 
 // initialize the canvas environment or context for commands
-const c = canvas.getContext('2d')
+const context = canvas.getContext('2d')
 
-let scoreValue = document.getElementById('scoreVal')
+const scoreValue = document.getElementById('scoreVal')
+const timeValue = document.getElementById('timeVal')
+const topValue = document.getElementById('topVal')
+
 let scoreCounter = 0
+let timeCounter = 30
+let animCounter = true
 
-let gameTime = 1
-
-
+const randomColors = ["black", "red", "green", "blue", "orange", "purple", "yellow"]
 
 class Shadow {
     constructor(x, y, width, height, color) {
@@ -28,88 +31,97 @@ class Shadow {
         this.exist = true
     }
     render() {
-        c.fillStyle = this.color
+        context.fillStyle = this.color
         this.width += .5
         this.height += .5
-        c.fillRect(this.x, this.y, this.width, this.height)   
+        context.fillRect(this.x, this.y, this.width, this.height)           
     }
 }
 
-
+const shadows = [
+    new Shadow (20, 20, 1, 1, "black"),
+    new Shadow (150, 150, 1, 1, "black"),
+    new Shadow (300, 300, 1, 1, "black"),
+]
 
 canvas.addEventListener('click', (e) => {
-    const pos = {
+    const position = {
       x: e.clientX,
       y: e.clientY
     }
-    console.log(pos)
-    console.log("x", pos.x)
-    console.log("y", pos.y)
-    
-    const xCheck = pos.x > shadow1.x && pos.x < shadow1.x + shadow1.width
-    const yCheck = pos.y > shadow1.y && pos.y < shadow1.y + shadow1.height
-    console.log("x check", xCheck)
-    console.log("y check", yCheck)
+    //console.log(pos)
+    //console.log("x", pos.x)
+    //console.log("y", pos.y)
 
     shadows.forEach(e => {
-        const xCheck = pos.x > e.x && pos.x < e.x + e.width
-        const yCheck = pos.y > e.y && pos.y < e.y + e.height
+        const xCheck = position.x > e.x && position.x < e.x + e.width
+        const yCheck = position.y > e.y && position.y < e.y + e.height
+
         if (xCheck === true && yCheck === true) {
+            //console.log(shadows.indexOf(e))
             e.exist = false
-            scoreCounter += 1
-            scoreValue.innerHTML = scoreCounter
+            shadows.splice(shadows.indexOf(e), 1)
+            if (e.color === "orange") {
+                scoreCounter += 5
+                scoreValue.innerHTML = scoreCounter 
+            } else {
+                scoreCounter += 1
+                scoreValue.innerHTML = scoreCounter
+            }
         }
-
     })
-
 })
 
-const shadow1 = new Shadow (100, 100, 10, 10, "black")
-
-const shadows = [
-    new Shadow (0, 0, 10, 10, "black"),
-
-]
-
-console.log(shadows)
-
-document.getElementById('testbtn').addEventListener('click', () => {
-
+document.getElementById('startbtn').addEventListener('click', () => {
+    scoreCounter = 0
+    scoreValue.innerHTML = scoreCounter
+    animCounter = true
     animate()
 })
 
+document.getElementById('pausebtn').addEventListener('click', () => {
+    animCounter = false
+})
+
 document.getElementById('endbtn').addEventListener('click', () => {
-    gameTime = 0
+    animCounter = false
     shadows.forEach(e => {
         e.exist = false
         if (e.exist) {
             e.render()
-        }
+        } 
     })
-    c.clearRect(0, 0, canvas.width, canvas.height)
-    
+    //console.log("before the pop loop", shadows)
+    while (shadows.length > 3) {
+        shadows.pop()
+    }
+    //console.log("after the pop loop", shadows)
+    context.clearRect(0, 0, canvas.width, canvas.height)
 })
 
-
-
-
-
-
 const animate = () => {
-    c.clearRect(0, 0, canvas.width, canvas.height)
-
-    if (gameTime = 1) {
-        
-        let randomX = Math.floor(Math.random() * 300)
-        let randomY = Math.floor(Math.random() * 300)
-        shadows.push(new Shadow (randomX, randomY, 1, 1, "black"))
-    }    
+    context.clearRect(0, 0, canvas.width, canvas.height)
     
-        shadows.forEach(e => {
-            if (e.exist) {
-                e.render()
-            } 
-        
-    } )    
-    requestAnimationFrame(animate)
+    let randomX = Math.floor(50 + (Math.random() * 300))
+    let randomY = Math.floor(50 + (Math.random() * 300))
+    let randomColor = randomColors[(Math.floor(Math.random() * 6))]
+    let randomWidth = Math.floor(Math.random() * 10)
+    let randomHeight = Math.floor(Math.random() * 10)
+
+    if (shadows.length <= 3) {
+
+    shadows.push(new Shadow (randomX, randomY, randomWidth, randomHeight, randomColor))
     }
+
+    shadows.forEach(e => {
+        if (e.exist) {
+            e.render()
+        } 
+        
+    } )
+
+    if( animCounter === true) {
+        requestAnimationFrame(animate)
+    }
+}
+
