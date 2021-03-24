@@ -10,6 +10,10 @@ p, ol {
     margin: 0;
 }
 
+.halloffamer {
+    font-size: .8em;
+}
+
 button {
     font-family: "Tahoma";
     background-color: white;
