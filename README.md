@@ -8,7 +8,6 @@ A game similar to "Whack-a-mole" but with a unique twist! The shapes to remove w
 
 
 ### Planned features include:
-* Game modifiers to increase the difficulty or add a score multiplier
 * A way to track high scores
 * Random generation of shapes to attack
 

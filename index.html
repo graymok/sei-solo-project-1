@@ -12,10 +12,10 @@
 
     <div class="container">
         <div class="imageSplash" id="welcomeSplash">
-            <img src="assets/welcome.png" >
+            <img src="assets/welcome.png" alt="welcome-image">
         </div>
         <div class="imageSplash hidden" id="endingSplash">
-            <img src="assets/ending.png">
+            <img src="assets/ending.png" alt="ending-image">
         </div>
         <canvas></canvas>
         
@@ -23,17 +23,31 @@
     
     <div class="information">
         <div class="buttons">
-            <p>Welcome to Shape Attack! In 10 seconds, zap as many shapes away with your left mouse click, get points, break records!</p>
+            <p>Welcome to Shape Attack!</p>
+            <br>
+            <p></p>In 10 seconds, zap as many shapes away with your left mouse click, get points, and break records!</p>
+            <br>
             <button id="startbtn">Start/Reset</button>
-            <button id="pausebtn">Freeze!</button> 
+            <!-- <button id="pausebtn">AFK!</button> -->
             <!-- <button id="endbtn">End Game Test</button> -->
         </div> 
         <div class="displays">
             <div class="score">Current Score: <span id="scoreVal">0</span></div>
-            <div class="timer">Current Time left: <span id="timeVal">0</span></div>
-            <div class="top">Current Top Score: <span id="topVal">0</span></div>
+            <div class="timer">Time Remaining: <span id="timeVal">0</span></div>
+            <div class="top">Session Top Score: <span id="topVal">0</span></div>
+            <br>
+            <div class="halloffamer">Hall of Fame
+                <ol>
+                    <li>Me: 80</li>
+                    <li>Charlesiubao: 74</li>
+                    <li>Life: 42</li>
+                </ol>
+            </div>
         </div>
+        
     </div>
-    
+    <div class="bottombanner">
+        <img src="assets/banner-white-bg.png" alt="banner-image">   
+    </div>
 </body>
 </html>

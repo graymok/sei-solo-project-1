@@ -17,8 +17,11 @@ const timeValue = document.getElementById('timeVal')
 const topValue = document.getElementById('topVal')
 const splashStart = document.getElementById('welcomeSplash')
 const splashEnd = document.getElementById('endingSplash')
+const footerBlack = document.getElementById('footerSplash-black')
+const footerWhite = document.getElementById('footerSplash-white')
 
 const shadows = []
+
 
 let scoreCounter = 0
 let timeCounter = 1800
@@ -64,10 +67,11 @@ canvas.addEventListener('click', (e) => {
         if (xCheck === true && yCheck === true) {
             //console.log(shadows.indexOf(e))
             e.exist = false
+
             shadows.splice(shadows.indexOf(e), 1)
             if (e.color === "orange" || e.color === "rgba(255, 165, 0, 0.5)") {
                 scoreCounter += 5
-                scoreValue.innerHTML = scoreCounter 
+                scoreValue.innerHTML = scoreCounter
             } else {
                 scoreCounter += 1
                 scoreValue.innerHTML = scoreCounter
@@ -99,9 +103,9 @@ document.getElementById('startbtn').addEventListener('click', () => {
     animate()
 })
 
-document.getElementById('pausebtn').addEventListener('click', () => {
+/* document.getElementById('pausebtn').addEventListener('click', () => {
     animCounter = false
-})
+}) */
 
 /* document.getElementById('endbtn').addEventListener('click', () => {
     
